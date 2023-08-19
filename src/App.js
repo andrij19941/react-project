@@ -1,5 +1,6 @@
 import React from 'react'; // Доданий імпорт Reac
-import CostItem from './components/CostItem';
+import Costs from './components/Costs';
+
 function App() {
 	const costs = [
 		{
@@ -23,9 +24,7 @@ function App() {
 	return (
 		<div>
 			<h1>Начнемо вивчати React</h1>
-			<CostItem date={costs[0].date} description={costs[0].description} amount={costs[0].amount} />
-			<CostItem date={costs[1].date} description={costs[1].description} amount={costs[1].amount} />
-			<CostItem date={costs[2].date} description={costs[2].description} amount={costs[2].amount} />
+			<Costs costs={costs} />
 		</div>
 	);
 }
