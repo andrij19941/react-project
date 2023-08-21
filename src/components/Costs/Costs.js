@@ -1,7 +1,7 @@
 import CostItem from './CostItem';
 import './Costs.css';
-import Card from './Card';
-function Costs(props) {
+import Card from '../UI/Card';
+const Costs = (props) => {
 	return (
 		<Card className="costs">
 			{props.costs.map((cost, index) => (
@@ -9,7 +9,7 @@ function Costs(props) {
 			))}
 		</Card>
 	);
-}
+};
 
 export default Costs;
 

@@ -1,7 +1,7 @@
 import React from 'react'; // Доданий імпорт Reac
-import Costs from './components/Costs';
+import Costs from './components/Costs/Costs';
 
-function App() {
+const App = () => {
 	const costs = [
 		{
 			date: new Date(2023, 6, 8),
@@ -21,12 +21,14 @@ function App() {
 			amount: 999.99,
 		},
 	];
+
+	// return React.createElement('div', {}, React.createElement('h1', {}, 'Начнемо вивчати React'), React.createElement(Costs, { costs: costs }));
 	return (
 		<div>
 			<h1>Начнемо вивчати React</h1>
 			<Costs costs={costs} />
 		</div>
 	);
-}
+};
 
 export default App;
