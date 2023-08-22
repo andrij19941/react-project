@@ -1,4 +1,5 @@
 import React from 'react'; // Доданий імпорт Reac
+import NewCost from './components/NewCost/NewCost';
 import Costs from './components/Costs/Costs';
 
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
 	// return React.createElement('div', {}, React.createElement('h1', {}, 'Начнемо вивчати React'), React.createElement(Costs, { costs: costs }));
 	return (
 		<div>
-			<h1>Начнемо вивчати React</h1>
+			<NewCost />
 			<Costs costs={costs} />
 		</div>
 	);
