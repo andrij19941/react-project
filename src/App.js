@@ -12,7 +12,7 @@ const INITTAL_COSTS = [
 
 	{ id: 'c2', date: new Date(2023, 3, 12), description: 'Джинси', amount: 49.99 },
 
-	{ id: 'c3', date: new Date(2023, 7, 3), description: 'Холодильник', amount: 999.99 },
+	{ id: 'c3', date: new Date(2022, 7, 3), description: 'Холодильник', amount: 999.99 },
 ];
 
 const App = () => {
